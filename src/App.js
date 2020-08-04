@@ -7,6 +7,8 @@ import {
   CardContent,
 } from "@material-ui/core";
 
+import { AiFillGithub, AiFillMail } from "react-icons/ai";
+
 import InfoBox from "./InfoBox";
 import Map from "./Map";
 import Table from "./Table";
@@ -139,6 +141,11 @@ function App() {
 
           <h3 className="app__graphTitle">Worldwide New {casesType[0].toUpperCase() + casesType.substring(1)}</h3>
           <LineGraph className="app__graph" casesType={casesType} />
+          <div className="footer">
+            <h2>&copy; Necrocraft</h2>
+            <a href="https://github.com/necrocraft" target="_blank" rel="noopener noreferrer"><AiFillGithub style={{color: "black", fontSize: "1.5em"}}/></a>
+            <a href="mailto:mhdzeefan@gmail.com" ><AiFillMail style={{color: "black", fontSize: "1.5em"}}/></a>
+        </div>
         </CardContent>
       </Card>
     </div>
